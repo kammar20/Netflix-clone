@@ -258,6 +258,9 @@ input:focus {
   text-align: center;
   padding: 5rem 0;
 }
+.accordion {
+  margin-bottom: 4rem;
+}
 
 .accordion .contentBx {
   text-align: left;

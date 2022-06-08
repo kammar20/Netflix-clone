@@ -25,10 +25,14 @@ a {
   text-decoration: none;
 }
 
-/* .container {
-  width: 80%;
+.accord-text {
+  margin-bottom: 2rem;
+}
+
+.container {
+  width: 55%;
   margin: 0 auto;
-} */
+}
 
 /* header */
 .head {
@@ -64,6 +68,10 @@ a {
 .navmenu {
   display: flex;
   align-items: center;
+}
+
+.logo img {
+  width: 170px;
 }
 
 select {
@@ -204,7 +212,21 @@ input:focus {
 }
 
 .download-sec {
-  display: none;
+  background-color: var(--black-color);
+  width: 60%;
+  padding: 1rem;
+  border: 3px solid var(--gray-color);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+}
+
+.download-p {
+  font-size: 1.8rem;
 }
 
 /* content 3 */
@@ -227,4 +249,153 @@ input:focus {
 
 .content4 .content-media img {
   width: 100%;
+}
+
+/* section 2 */
+.sec2 {
+  border-top: 1rem solid var(--gray-color);
+  border-bottom: 1rem solid var(--gray-color);
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.accordion .contentBx {
+  text-align: left;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.accordion .contentBx .label {
+  position: relative;
+  padding: 2.2rem;
+  letter-spacing: 0.2rem;
+  background-color: var(--gray-color);
+  cursor: pointer;
+  font-size: 2.8rem;
+}
+
+.accordion .contentBx .label::after {
+  content: '+';
+  position: absolute;
+  right: 5%;
+}
+
+.accordion .contentBx.active .label::after {
+  content: 'x';
+}
+
+.accordion .contentBx .content {
+  position: relative;
+  font-size: 2.8rem;
+  letter-spacing: 0.1rem;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+  background-color: var(--gray-color);
+  color: var(--white-color);
+}
+
+.accordion .contentBx.active .content {
+  height: auto;
+  padding: 1.6rem;
+}
+.accordion .contentBx.active .label {
+  border-bottom: 2px solid var(--black-color);
+}
+
+/* media query for mobile */
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+  /* header */
+  .head {
+    height: 80vh;
+  }
+  .navbar {
+    padding: 3% 3.5%;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+  select {
+    padding: 0.7rem 1rem;
+    margin-right: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .btn-signin {
+    padding: 0.7rem 1.2rem;
+    font-size: 1.4rem;
+  }
+
+  .xxl-text {
+    font-size: 2.8rem;
+  }
+
+  .p-upper {
+    font-size: 2rem;
+  }
+
+  .p-lower {
+    font-size: 2.2rem;
+  }
+
+  .get-start-form {
+    flex-direction: column;
+  }
+  input {
+    width: 90%;
+    padding: 2.2rem 1rem;
+    margin-bottom: 2rem;
+  }
+
+  input:focus {
+    border: 1px solid #0455af;
+  }
+
+  .btn-start {
+    width: 40%;
+    padding: 1.8rem 1rem;
+    font-size: 1.8rem;
+  }
+
+  /* section 1 */
+
+  .common-content {
+    flex-flow: column nowrap;
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+
+  .content-text,
+  .content-media {
+    width: 100%;
+  }
+
+  .xl-text {
+    font-size: 2.8rem;
+  }
+
+  .content-p {
+    font-size: 1.8rem;
+  }
+
+  /* download sec */
+  .download-sec {
+    width: 65%;
+    padding: 0rem;
+    left: 18%;
+  }
+
+  /* sec2 */
+  .accordion .contentBx .label {
+    padding: 2.2rem;
+    font-size: 2rem;
+  }
+
+  .accordion .contentBx .content {
+    font-size: 2.2rem;
+  }
 }

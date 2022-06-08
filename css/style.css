@@ -25,6 +25,11 @@ a {
   text-decoration: none;
 }
 
+/* .container {
+  width: 80%;
+  margin: 0 auto;
+} */
+
 /* header */
 .head {
   background-image: url('../img/banner.jpg');
@@ -146,4 +151,80 @@ input:focus {
 
 ::placeholder {
   font-size: 1.5rem;
+}
+
+/* section 1 */
+
+.common-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1rem solid var(--gray-color);
+  padding: 5rem 20rem;
+}
+
+.content-text {
+  width: 53%;
+}
+
+.content-media {
+  width: 47%;
+  position: relative;
+}
+
+.xl-text {
+  font-size: 4.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.content-p {
+  font-size: 3rem;
+}
+
+/* content 1 */
+.content1 .content-media img {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.content1 .content-media video {
+  position: absolute;
+  width: 73%;
+  height: auto;
+  top: 20%;
+  right: 13.9%;
+}
+
+/* content 2 */
+
+.content2 .content-media .mobile-img {
+  width: 100%;
+}
+
+.download-sec {
+  display: none;
+}
+
+/* content 3 */
+
+.content3 .content-media img {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.content3 .content-media video {
+  position: absolute;
+  width: 60%;
+  height: auto;
+  top: 8%;
+  right: 20.9%;
+}
+
+/* content 4 */
+
+.content4 .content-media img {
+  width: 100%;
 }

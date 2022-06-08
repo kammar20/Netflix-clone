@@ -1,68 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- favicon -->
-  <link rel="shortcut icon" href="./img/favicon1.png" type="image/x-icon" />
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- google font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-   href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-   rel="stylesheet"
-  />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/favicon1.png" type="image/x-icon" />
 
-  <!-- font awesome -->
-  <script
-   src="https://kit.fontawesome.com/760602bfdf.js"
-   crossorigin="anonymous"
-  ></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet" />
 
-  <!-- css styleSheet -->
-  <link rel="stylesheet" href="./css/style.css" />
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/c8a086bc84.js" crossorigin="anonymous"></script>
 
-  <!-- javaScript -->
-  <script src="./js/app.js" defer></script>
+    <!-- css styleSheet -->
+    <link rel="stylesheet" href="./css/style.css" />
 
-  <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
- </head>
- <body>
-  <header class="head">
-   <nav class="navbar">
-    <div class="logo">
-     <img src="./img/logo.png" alt="netflix" width="170" />
-    </div>
-    <div class="navmenu">
-     <form>
-      <select id="language" class="language" name="language">
-       <option class="option" value="volvo">English</option>
-       <option class="option" value="saab">hindi</option>
-      </select>
-     </form>
-     <div>
-      <a href="#" class="btn-signin">sign in</a>
-     </div>
-    </div>
-   </nav>
+    <!-- javaScript -->
+    <script src="./js/app.js" defer></script>
 
-   <div class="tagline">
-    <div class="xxl">Unlimited movies, TV shows and more.</div>
-    <p class="p-upper">Watch anywhere. Cancel anytime.</p>
-    <p class="p-lower">
-     Ready to watch? Enter your email to create or restart your membership.
-    </p>
+    <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
+</head>
 
-    <form class="get-start">
-     <input type="text" class="input-email" placeholder="email address" />
-     <a href="#" class="btn-start"
-      >get started <i class="fa-solid fa-arrow-right icon-arrow"></i
-     ></a>
-    </form>
-   </div>
-  </header>
- </body>
+
+<body>
+    <!-- header -->
+    <header class="head">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./img/logo.png" alt="netflix" width="170" />
+            </div>
+            <div class="navmenu">
+                <form class="language">
+                    <select id="language" name="language">
+                        <option value="volvo">English</option>
+                        <option value="saab">
+                            हिन्दी</option>
+                    </select>
+                </form>
+                <div>
+                    <a href="#" class="btn-signin">sign in</a>
+                </div>
+            </div>
+        </nav>
+        <!-- tagline -->
+        <div class="tagline">
+            <div class="xxl-text">Unlimited movies, TV shows and more.</div>
+            <p class="p-upper">Watch anywhere. Cancel anytime.</p>
+            <p class="p-lower">
+                Ready to watch? Enter your email to create or restart your membership.
+            </p>
+
+            <form class="get-start-form">
+                <input type="email" class="input-email" placeholder="Email address" />
+                <a href="#" class="btn-start">get started <i class="fa-solid fa-chevron-right"></i></a>
+            </form>
+        </div>
+    </header>
+</body>
+
 </html>

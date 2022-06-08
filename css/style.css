@@ -1,130 +1,149 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* utility */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html,body{
-    font-family: 'Roboto', sans-serif;
-    background-color: #000;
-    color: #fff;
-   
+:root {
+  --primary-color: #e50914;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --gray-color: #222222;
 }
 
-
-.head{
-    background-image: url("../img/banner.jpg");
-    width: 100%;
-    height: 90vh;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000;
+  color: #fff;
+  font-size: 62.5%;
 }
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    padding: 2% 4%;
+a {
+  text-decoration: none;
 }
 
-.navmenu{
-    display: flex;
+/* header */
+.head {
+  background-image: url('../img/banner.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
 }
 
-.language{
-    padding: 7px 10px;
-    text-align: center;
-    margin-right: 30px;
-    color: #fff;
-    background-color: #000;
-    border: 1px solid #fff;
-    letter-spacing: .4px;
-    font-size: 15px;
-    
+.head::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: inset 2rem 2rem 25rem #000000;
 }
 
-.option{
-    background-color: #999;
-    text-align: left;
-} 
-
-.btn-signin{
-    display: inline-block;
-    text-decoration: none;
-    font-size: 17px;
-    padding: 7px 17px;
-    font-weight: 400;
-    background-color: #e50914;
-    color: #fff;
-    text-transform: capitalize;
-    border-radius: 3px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8% 3.5%;
+  position: relative;
+  z-index: 2;
 }
 
-/* tagline */
-
-.tagline{
-  
-    max-width: 600px;
-    margin: 100px auto;
-    /* background-color: red; */
-    text-align: center;
+.navmenu {
+  display: flex;
+  align-items: center;
 }
 
-.xxl{
-    font-size: 50px;
-    font-weight: 700;
-    margin-bottom: 15px;
+select {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  border: 1px solid #999;
+  padding: 0.7rem 1.3rem;
+  letter-spacing: 0.1rem;
+  margin-right: 2.5rem;
+  font-size: 1.5rem;
 }
 
-.p-upper{
-    font-size: 25px;
-    font-weight: 500;
-    margin-bottom: 30px;
+option {
+  background-color: #999;
 }
 
-.p-lower{
-    margin-bottom: 10px;
+.btn-signin {
+  display: inline-block;
+  background-color: var(--primary-color);
+  padding: 0.7rem 1.7rem;
+  font-weight: 400;
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  border-radius: 0.3rem;
+  color: var(--white-color);
 }
 
-.get-start{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: red;
-
+.tagline {
+  max-width: 75rem;
+  margin: 15rem auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
-
-input{
-    width: 75%;
-    padding: 15px;
-    border: none;
-    outline: none;
-
+.xxl-text {
+  font-size: 6.2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
 }
 
-::placeholder{
-    text-transform: capitalize;
-    font-size: 15px;
+.p-upper {
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
 }
 
-.btn-start{
-    width: 25%;
-    background-color: aqua;
-    text-decoration: none;
-    text-transform: capitalize;
-    display: inline-block;
-    padding: 13.5px;
-    border: none;
+.p-lower {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
-.icon-arrow{
-    background-color: red;
+/* email submit */
+.get-start-form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
+input {
+  width: 65%;
+  border: 2px solid #888;
+  padding: 2.5rem 1rem;
+  outline: none;
+  border-radius: 0.2rem;
+}
 
+input:focus {
+  border: 1px solid #0455af;
+}
 
+.btn-start {
+  display: inline-block;
+  width: 35%;
+  background-color: var(--primary-color);
+  padding: 2.2rem 1.2rem;
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  color: var(--white-color);
+  letter-spacing: 0.1rem;
+}
 
+.btn-start:hover {
+  background-color: red;
+}
 
-
+::placeholder {
+  font-size: 1.5rem;
+}

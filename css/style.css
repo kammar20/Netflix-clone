@@ -1,4 +1,4 @@
-/* utility */
+/* utility classes */
 
 * {
   margin: 0;
@@ -23,10 +23,6 @@ body {
 
 a {
   text-decoration: none;
-}
-
-.accord-text {
-  margin-bottom: 2rem;
 }
 
 .container {
@@ -56,6 +52,7 @@ a {
   box-shadow: inset 2rem 2rem 25rem #000000;
 }
 
+/* navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -99,6 +96,7 @@ option {
   color: var(--white-color);
 }
 
+/* tagline */
 .tagline {
   max-width: 75rem;
   margin: 15rem auto;
@@ -123,11 +121,12 @@ option {
   margin-bottom: 1.5rem;
 }
 
-/* email submit */
+/* email submit form */
 .get-start-form {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 input {
@@ -161,7 +160,7 @@ input:focus {
   font-size: 1.5rem;
 }
 
-/* section 1 */
+/* section 1 start*/
 
 .common-content {
   display: flex;
@@ -258,6 +257,7 @@ input:focus {
   text-align: center;
   padding: 5rem 0;
 }
+
 .accordion {
   margin-bottom: 4rem;
 }
@@ -302,8 +302,61 @@ input:focus {
   height: auto;
   padding: 1.6rem;
 }
+
 .accordion .contentBx.active .label {
   border-bottom: 2px solid var(--black-color);
+}
+
+.accord-text {
+  margin-bottom: 2rem;
+}
+
+/* footer */
+.foot {
+  padding: 10rem 0;
+  color: #757575;
+}
+
+.p-foot {
+  font-size: 1.6rem;
+  margin-bottom: 5rem;
+}
+
+.foot-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.foot-common {
+  width: 20%;
+}
+
+.foot-common li {
+  list-style: none;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.foot-common li:hover {
+  text-decoration: underline;
+}
+
+.foot-lan {
+  margin-top: 3rem;
+}
+
+.foot-lan select {
+  border: 1px solid #757575;
+  color: #757575;
+}
+
+.copy {
+  margin-top: 5rem;
+}
+.copy a {
+  text-decoration: underline;
+  color: var(--white-color);
 }
 
 /* media query for mobile */
@@ -354,10 +407,6 @@ input:focus {
     margin-bottom: 2rem;
   }
 
-  input:focus {
-    border: 1px solid #0455af;
-  }
-
   .btn-start {
     width: 40%;
     padding: 1.8rem 1rem;
@@ -400,5 +449,71 @@ input:focus {
 
   .accordion .contentBx .content {
     font-size: 2.2rem;
+  }
+
+  /* foot */
+  .foot {
+    padding: 4rem 0;
+  }
+  .foot-menu {
+    flex-wrap: wrap;
+  }
+
+  .foot-common {
+    width: 50%;
+  }
+}
+
+/* media query for medium size device */
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  .container {
+    width: 95%;
+  }
+  .head {
+    height: 70vh;
+  }
+
+  /* section 1 */
+  .common-content {
+    flex-flow: column nowrap;
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+
+  .content-text,
+  .content-media {
+    width: 100%;
+  }
+}
+
+/* meadia query for ipad */
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .container {
+    width: 95%;
+  }
+  .common-content {
+    flex-flow: column nowrap;
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+
+  .content-text,
+  .content-media {
+    width: 80%;
+  }
+
+  .xl-text {
+    font-size: 3rem;
+  }
+
+  .content-p {
+    font-size: 2rem;
+  }
+
+  /* download sec */
+  .download-sec {
+    width: 65%;
+    padding: 0rem;
+    left: 18%;
   }
 }
